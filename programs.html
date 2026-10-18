@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Training Programs Library — KINETIQ AI Fitness</title>
+  <meta name="description" content="Explore science-backed periodized programs for Hypertrophy, Olympic Strength, Metabolic Conditioning, and Longevity. Dynamically auto-regulated by KINETIQ AI.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- Sticky Glass Navbar -->
+  <header class="navbar">
+    <div class="container-wide navbar-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+          </svg>
+        </div>
+        <span>KINETIQ<span class="highlight">.AI</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="features.html" class="nav-link">Features</a></li>
+          <li><a href="ai-coach.html" class="nav-link">AI Coach</a></li>
+          <li><a href="programs.html" class="nav-link active">Programs</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-secondary btn-sm" data-open-modal="demo-modal">Book Demo</button>
+        <a href="pricing.html" class="btn btn-primary btn-sm btn-magnetic">Start Free Trial</a>
+        <button class="mobile-toggle" aria-label="Open Navigation Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
+        <span>KINETIQ<span class="highlight">.AI</span></span>
+      </div>
+      <button class="mobile-drawer-close modal-close">&times;</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home <span>&rarr;</span></a>
+      <a href="features.html" class="mobile-nav-link">Features <span>&rarr;</span></a>
+      <a href="ai-coach.html" class="mobile-nav-link">AI Coach <span>&rarr;</span></a>
+      <a href="programs.html" class="mobile-nav-link active">Programs <span>&rarr;</span></a>
+      <a href="dashboard.html" class="mobile-nav-link">Dashboard <span>&rarr;</span></a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing <span>&rarr;</span></a>
+      <a href="about.html" class="mobile-nav-link">About <span>&rarr;</span></a>
+      <a href="contact.html" class="mobile-nav-link">Contact <span>&rarr;</span></a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <section class="section" style="padding-top: 5rem; padding-bottom: 2rem;">
+    <div class="container text-center">
+      <span class="section-tag">Empirical Curriculum</span>
+      <h1 class="section-title">Autonomous Training Protocols</h1>
+      <p class="section-subtitle" style="max-width: 720px; margin: 0 auto 3rem auto;">
+        Every program is built upon exercise physiology and auto-regulates sets, reps, and loads based on your daily biometric strain and recovery scores.
+      </p>
+
+      <!-- Live Search & Filter Bar -->
+      <div style="max-width: 500px; margin: 0 auto 2.5rem auto;">
+        <input type="text" class="form-input program-search-input" placeholder="Search programs by name, target, or coach..." style="text-align: center; border-radius: var(--radius-full);">
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn program-filter-btn active" data-category="all">All Programs</button>
+        <button class="filter-btn program-filter-btn" data-category="hypertrophy">Hypertrophy & Mass</button>
+        <button class="filter-btn program-filter-btn" data-category="strength">Olympic Strength</button>
+        <button class="filter-btn program-filter-btn" data-category="fatloss">Fat Oxidation</button>
+        <button class="filter-btn program-filter-btn" data-category="athletic">Athletic Conditioning</button>
+        <button class="filter-btn program-filter-btn" data-category="mobility">Mobility & Longevity</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs Grid -->
+  <section class="section" style="padding-top: 1rem;">
+    <div class="container">
+      <div class="grid-3" id="program-catalog-grid">
+        <!-- 1. Hypertrophy Protocol X -->
+        <div class="program-card program-catalog-card reveal-on-scroll stagger-1" data-category="hypertrophy">
+          <div class="program-media">
+            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=800&q=80" alt="Hypertrophy Protocol X">
+            <span class="program-badge">Hypertrophy</span>
+          </div>
+          <div class="program-body">
+            <div class="program-meta">
+              <span class="program-meta-item">⏱ 12 Weeks</span>
+              <span class="program-meta-item">⚡ 4 Days / Wk</span>
+              <span class="program-meta-item">🎯 Advanced</span>
+            </div>
+            <h3 class="program-title">Hypertrophy Protocol X</h3>
+            <p class="program-desc">High mechanical tension periodization focused on myofibrillar hypertrophy, progressive overload, and specialized deload phases.</p>
+            <div style="display: flex; gap: 0.75rem; margin-top: auto;">
+              <button class="btn btn-secondary btn-sm" data-preview-program style="flex: 1;">Preview Syllabus</button>
+              <a href="pricing.html" class="btn btn-primary btn-sm" style="flex: 1;">Start Program</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Apex Strength & Velocity -->
+        <div class="program-card program-catalog-card reveal-on-scroll stagger-2" data-category="strength">
+          <div class="program-media">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="Apex Strength & Velocity">
+            <span class="program-badge">Maximal Strength</span>
+          </div>
+          <div class="program-body">
+            <div class="program-meta">
+              <span class="program-meta-item">⏱ 10 Weeks</span>
+              <span class="program-meta-item">⚡ 3 Days / Wk</span>
+              <span class="program-meta-item">🎯 Elite</span>
+            </div>
+            <h3 class="program-title">Apex Strength & Velocity</h3>
+            <p class="program-desc">Linear undulating strength protocol targeting central nervous system adaptation, bar speed velocity, and raw 1RM power progression.</p>
+            <div style="display: flex; gap: 0.75rem; margin-top: auto;">
+              <button class="btn btn-secondary btn-sm" data-preview-program style="flex: 1;">Preview Syllabus</button>
+              <a href="pricing.html" class="btn btn-primary btn-sm" style="flex: 1;">Start Program</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Metabolic Engine 2.0 -->
+        <div class="program-card program-catalog-card reveal-on-scroll stagger-3" data-category="fatloss">
+          <div class="program-media">
+            <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?auto=format&fit=crop&w=800&q=80" alt="Metabolic Engine 2.0">
+            <span class="program-badge">Fat Loss</span>
+          </div>
+          <div class="program-body">
+            <div class="program-meta">
+              <span class="program-meta-item">⏱ 8 Weeks</span>
+              <span class="program-meta-item">⚡ 5 Days / Wk</span>
+              <span class="program-meta-item">🎯 Intermediate</span>
+            </div>
+            <h3 class="program-title">Metabolic Engine 2.0</h3>
+            <p class="program-desc">High-density lactic complexes and anaerobic threshold intervals engineered to accelerate mitochondrial fat oxidation while protecting lean tissue.</p>
+            <div style="display: flex; gap: 0.75rem; margin-top: auto;">
+              <button class="btn btn-secondary btn-sm" data-preview-program style="flex: 1;">Preview Syllabus</button>
+              <a href="pricing.html" class="btn btn-primary btn-sm" style="flex: 1;">Start Program</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Kinetiq Hybrid Athlete -->
+        <div class="program-card program-catalog-card reveal-on-scroll stagger-1" data-category="athletic">
+          <div class="program-media">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" alt="Kinetiq Hybrid Athlete">
+            <span class="program-badge">Hybrid Performance</span>
+          </div>
+          <div class="program-body">
+            <div class="program-meta">
+              <span class="program-meta-item">⏱ 16 Weeks</span>
+              <span class="program-meta-item">⚡ 5 Days / Wk</span>
+              <span class="program-meta-item">🎯 Advanced</span>
+            </div>
+            <h3 class="program-title">Kinetiq Hybrid Athlete</h3>
+            <p class="program-desc">The ultimate concurrent protocol: heavy compound lifting paired with Zone 2 aerobic base building for total hybrid athletic dominance.</p>
+            <div style="display: flex; gap: 0.75rem; margin-top: auto;">
+              <button class="btn btn-secondary btn-sm" data-preview-program style="flex: 1;">Preview Syllabus</button>
+              <a href="pricing.html" class="btn btn-primary btn-sm" style="flex: 1;">Start Program</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Spinal & Joint Longevity -->
+        <div class="program-card program-catalog-card reveal-on-scroll stagger-2" data-category="mobility">
+          <div class="program-media">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" alt="Spinal & Joint Longevity">
+            <span class="program-badge">Mobility & Rehab</span>
+          </div>
+          <div class="program-body">
+            <div class="program-meta">
+              <span class="program-meta-item">⏱ 6 Weeks</span>
+              <span class="program-meta-item">⚡ 3 Days / Wk</span>
+              <span class="program-meta-item">🎯 All Levels</span>
+            </div>
+            <h3 class="program-title">Spinal & Joint Longevity</h3>
+            <p class="program-desc">Biomechanical restoration protocol focusing on thoracic spine rotation, hip capsule decompression, and rotator cuff integrity.</p>
+            <div style="display: flex; gap: 0.75rem; margin-top: auto;">
+              <button class="btn btn-secondary btn-sm" data-preview-program style="flex: 1;">Preview Syllabus</button>
+              <a href="pricing.html" class="btn btn-primary btn-sm" style="flex: 1;">Start Program</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Foundation Zero: Neuromuscular Reset -->
+        <div class="program-card program-catalog-card reveal-on-scroll stagger-3" data-category="strength">
+          <div class="program-media">
+            <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=800&q=80" alt="Foundation Zero">
+            <span class="program-badge">Foundational</span>
+          </div>
+          <div class="program-body">
+            <div class="program-meta">
+              <span class="program-meta-item">⏱ 8 Weeks</span>
+              <span class="program-meta-item">⚡ 3 Days / Wk</span>
+              <span class="program-meta-item">🎯 Beginner</span>
+            </div>
+            <h3 class="program-title">Foundation Zero</h3>
+            <p class="program-desc">Perfect movement mechanics, motor unit recruitment, and ligament adaptation designed to build bulletproof foundational strength.</p>
+            <div style="display: flex; gap: 0.75rem; margin-top: auto;">
+              <button class="btn btn-secondary btn-sm" data-preview-program style="flex: 1;">Preview Syllabus</button>
+              <a href="pricing.html" class="btn btn-primary btn-sm" style="flex: 1;">Start Program</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Program Syllabus Modal -->
+  <div class="modal-overlay" id="program-syllabus-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div>
+          <span class="badge-pill active" style="margin-bottom: 0.4rem;">Curriculum Syllabus</span>
+          <h3 class="modal-program-title" style="font-size: 1.5rem; font-weight: 800;">Hypertrophy Protocol X</h3>
+          <p class="modal-program-desc" style="font-size: 0.88rem; color: var(--text-secondary); margin: 0;">Periodized week-by-week curriculum overview.</p>
+        </div>
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+          <div style="padding: 1.25rem; background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+              <span style="font-weight: 700; color: #fff;">Phase 1: Volume Accumulation (Weeks 1-4)</span>
+              <span style="color: var(--accent-primary); font-size: 0.85rem; font-weight: 600;">RPE 7-8</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Primary compound progression with 12-16 weekly sets per muscle group. High focus on time-under-tension and eccentric control.</p>
+          </div>
+
+          <div style="padding: 1.25rem; background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+              <span style="font-weight: 700; color: #fff;">Phase 2: Intensification & Heavy Load (Weeks 5-8)</span>
+              <span style="color: var(--accent-secondary); font-size: 0.85rem; font-weight: 600;">RPE 8.5-9.5</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Load ramps to 82-88% 1RM. Rest intervals widen to 3.5 minutes for full ATP replenishment. Biometric recovery tracking actively engaged.</p>
+          </div>
+
+          <div style="padding: 1.25rem; background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+              <span style="font-weight: 700; color: #fff;">Phase 3: Peak Hypertrophy & Supercompensation (Weeks 9-12)</span>
+              <span style="color: var(--accent-amber); font-size: 0.85rem; font-weight: 600;">Max Strain</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Myo-reps, drop sets, and lengthened partials applied to isolate motor units, followed by a scheduled 5-day active recovery deload.</p>
+          </div>
+
+          <a href="pricing.html" class="btn btn-primary btn-lg" style="text-align: center; margin-top: 1rem;">Enroll in Program via Pro Trial &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <div>&copy; 2026 KINETIQ Performance Systems Inc. All rights reserved.</div>
+        <div style="display: flex; gap: 2rem;">
+          <a href="index.html">Home</a>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/interactive.js"></script>
+</body>
+</html>
