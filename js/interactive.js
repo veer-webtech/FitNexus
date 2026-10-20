@@ -1,5 +1,5 @@
 /**
- * KINETIQ AI - Interactive Controllers & Dynamic Components
+ * FitNexus - Interactive Controllers & Dynamic Components
  * Handles: Before/After Slider, AI Coach Simulator, SaaS Dashboard Logic,
  * Program Catalog Filters, Pricing Toggle, Contact Form Validation.
  */
@@ -360,7 +360,7 @@ function initContactForm() {
       form.reset();
 
       if (window.showToast) {
-        showToast('Inquiry received! A Kinetiq Performance Director will contact you within 4 hours.');
+        showToast('Inquiry received! A FitNexus Performance Director will contact you within 4 hours.');
       }
     }, 1200);
   });

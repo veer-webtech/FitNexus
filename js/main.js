@@ -1,5 +1,5 @@
 /**
- * KINETIQ AI - Main Global Interactions & Animation Engine
+ * FitNexus - Main Global Interactions & Animation Engine
  * Handles Navbar, Scroll Reveals, Animated Counters, Modals, Toasts, Dynamic Keywords
  */
 
@@ -309,7 +309,7 @@ function initNewsletter() {
     e.preventDefault();
     const input = form.querySelector('.newsletter-input');
     if (input && input.value.trim()) {
-      showToast(`Subscribed! You'll receive KINETIQ Neural weekly briefings at ${input.value.trim()}`);
+      showToast(`Subscribed! You'll receive FitNexus Neural weekly briefings at ${input.value.trim()}`);
       input.value = '';
     }
   });
